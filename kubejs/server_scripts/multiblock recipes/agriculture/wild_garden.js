@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('thermal:tomato_seeds', 800, 200)
         .duration(100)
         .EUt(global.vha['lv'])
-        .circuit(3);
+        .circuit(5);
 
     event.recipes.gtceu.wild_garden(id('thermal_crops_2'))
         .itemInputs('minecraft:bone_meal')
