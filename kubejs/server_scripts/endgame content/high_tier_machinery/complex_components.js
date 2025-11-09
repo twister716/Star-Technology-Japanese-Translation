@@ -237,8 +237,8 @@ ServerEvents.recipes(event => {
             componentParts('catalyst_core', [`4x gtceu:${Primary}_rod`, `${GlassType}`, `${CatalystType}`, `32x gtceu:fine_${SuperConductor}_wire`, `gtceu:${Tier1}_emitter`, `4x gtceu:${Support}_ring`],
                 [`gtceu:${Fluid} 576`], 480, `kubejs:${PriorTier}_catalyst_core`);
             
-            componentParts('high_strength_panel', [`2x gtceu:double_${Primary}_plate`, `#gtceu:circuits/${Tier1}`, `8x gtceu:${Support}_screw`],
-                [`gtceu:${Material} 576`, `gtceu:${Plastic} ${396+Scaler*36}`], 200, `kubejs:${PriorTier}_high_strength_panel`);
+            componentParts('high_strength_panel', [`gtceu:dense_${Primary}_plate`, `#gtceu:circuits/${Tier1}`, `4x gtceu:${Support}_screw`],
+                [`gtceu:${Material} 288`, `gtceu:${Plastic} ${396+Scaler*36}`], 200, `kubejs:${PriorTier}_high_strength_panel`);
         
             componentParts('micropower_router', [`gtceu:${CableType}_double_cable`, `4x gtceu:${CableType}_single_cable`, `2x gtceu:${Primary}_plate`, `32x gtceu:fine_${WireTypeComputational}_wire`],
                 [`gtceu:${RubberF} 720`], 240, `kubejs:${PriorTier}_micropower_router`);
@@ -388,8 +388,8 @@ ServerEvents.recipes(event => {
         MCSF_Component_Parts('catalyst_core', [`${4 * MCSF_Scaler * .75}x gtceu:${Primary}_rod`, `${MCSF_Scaler * .75}x ${GlassType}`, `${MCSF_Scaler * .75 * CatalystType[0]}x ${CatalystType.split(" ")[1]}`, `${16 * MCSF_Scaler * .75}x gtceu:fine_${SuperConductor}_wire`, `${16 * MCSF_Scaler * .75}x gtceu:fine_${SuperConductor}_wire`, `${MCSF_Scaler * .75}x gtceu:${Tier1}_emitter`, `${4 * MCSF_Scaler * .75}x gtceu:${Support}_ring`],
             [`gtceu:${Fluid} ${MCSF_Scaler*.75*576}`], 480, 13);
         
-        MCSF_Component_Parts('high_strength_panel', [`${2 * MCSF_Scaler * .75}x gtceu:double_${Primary}_plate`, `${MCSF_Scaler * .75}x #gtceu:circuits/${Tier1}`, `${8 * MCSF_Scaler * .75}x gtceu:${Support}_screw`],
-            [`gtceu:${Material} ${MCSF_Scaler*.75*576}`, `gtceu:${Plastic} ${MCSF_Scaler*.75*(396+Scaler*36)}`], 200, 14);
+        MCSF_Component_Parts('high_strength_panel', [`${MCSF_Scaler * .75}x gtceu:dense_${Primary}_plate`, `${MCSF_Scaler * .75}x #gtceu:circuits/${Tier1}`, `${4 * MCSF_Scaler * .75}x gtceu:${Support}_screw`],
+            [`gtceu:${Material} ${MCSF_Scaler*.75*288}`, `gtceu:${Plastic} ${MCSF_Scaler*.75*(396+Scaler*36)}`], 200, 14);
     
         MCSF_Component_Parts('micropower_router', [`${MCSF_Scaler * .75}x gtceu:${CableType}_double_cable`, `${4 * MCSF_Scaler * .75}x gtceu:${CableType}_single_cable`, `${2 * MCSF_Scaler * .75}x gtceu:${Primary}_plate`, `${16 * MCSF_Scaler * .75}x gtceu:fine_${WireTypeComputational}_wire`, `${16 * MCSF_Scaler * .75}x gtceu:fine_${WireTypeComputational}_wire`],
             [`gtceu:${RubberF} ${MCSF_Scaler*.75*720}`], 240, 15);

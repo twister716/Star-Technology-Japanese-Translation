@@ -9,11 +9,11 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UEV]);
 
     event.recipes.gtceu.injection_mixer(id('dissipated_helish_concentrate'))
-        .itemInputs('2x gtceu:plutonium_dust', '7x gtceu:warped_dust', '1x gtceu:astatine_dust', 
+        .itemInputs('2x gtceu:plutonium_dust', '173x gtceu:warped_dust', '1x gtceu:astatine_dust', 
             '5x gtceu:netherite_dust', '3x thermal_extra:soul_sand_dust')
         .inputFluids('gtceu:nether_star_concentrate 144', 'gtceu:infernal_concentrate 250', 'gtceu:enriched_mystical_concentrate 625', 
             'gtceu:flerovium 432', 'gtceu:nether_air 18000')
-        .outputFluids('gtceu:dissipated_helish_concentrate 6250')
+        .outputFluids('gtceu:dissipated_helish_concentrate 7450')
         .duration(720)
         .EUt(GTValues.VHA[GTValues.UEV]);
 
@@ -39,7 +39,6 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.macerator(id(`warped_dust_nether_from_${type.split(':')[1]}`))
         .itemInputs(type)
         .itemOutputs(`${size}x gtceu:warped_dust`)
-        .dimension('minecraft:the_nether')
         .duration(100 * size)
         .EUt(GTValues.VA[GTValues.LuV]);
     };

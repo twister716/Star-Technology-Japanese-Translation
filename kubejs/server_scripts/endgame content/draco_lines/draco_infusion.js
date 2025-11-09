@@ -122,16 +122,22 @@ ServerEvents.recipes(event => {
     '#gtceu:circuits/uiv','kubejs:voidic_reinforced_mesh','kubejs:abyssal_inductor','kubejs:uiv_microfluidic_flow_valve','kubejs:voidic_reinforced_mesh', 150,
     GTValues.VA[GTValues.UXV]);
 
-    Infusion('void_sponge','16x kubejs:void_saturation_sponge','gtceu:enderium 576','16x minecraft:sponge','kubejs:voidic_reinforced_mesh','kubejs:voidic_reinforced_mesh',
-    'kubejs:voidic_reinforced_mesh','kubejs:voidic_reinforced_mesh','kubejs:voidic_reinforced_mesh','kubejs:voidic_reinforced_mesh',800,GTValues.VA[GTValues.ZPM]);
+    Infusion('saturation_core_low','32x kubejs:saturation_core_1','gtceu:dragon_breath 100','gtceu:energy_cluster','gtceu:tungsten_carbide_plate','gtceu:void_screw','gtceu:hsss_gear',
+    'gtceu:double_hsss_plate','gtceu:void_ring','gtceu:small_tungsten_carbide_gear',400,GTValues.VA[GTValues.UHV]);
 
-    Infusion('saturation_core_low','32x kubejs:saturation_core_1','gtceu:dragon_breath 100','gtceu:energy_cluster','gtceu:tungsten_carbide_plate','gtceu:void_rod','gtceu:hsss_plate',
-    'gtceu:hsss_plate','gtceu:void_rod','gtceu:tungsten_carbide_plate',400,GTValues.VA[GTValues.UHV]);
+    Infusion('saturation_core_moderate','32x kubejs:saturation_core_2','gtceu:dragon_breath 100','gtceu:energy_cluster','gtceu:tungsten_carbide_plate','gtceu:void_screw','gtceu:hssg_gear',
+    'gtceu:double_hssg_plate','gtceu:void_ring','gtceu:small_tungsten_carbide_gear',400,GTValues.VA[GTValues.UHV]);
 
-    Infusion('saturation_core_moderate','32x kubejs:saturation_core_2','gtceu:dragon_breath 100','gtceu:energy_cluster','gtceu:tungsten_carbide_plate','gtceu:void_rod','gtceu:hssg_plate',
-    'gtceu:hssg_plate','gtceu:void_rod','gtceu:tungsten_carbide_plate',400,GTValues.VA[GTValues.UHV]);
+    Infusion('saturation_core_high','32x kubejs:saturation_core_3','gtceu:dragon_breath 100','gtceu:energy_cluster','gtceu:tungsten_carbide_plate','gtceu:void_rod','gtceu:hsse_gear',
+    'gtceu:double_hsse_plate','gtceu:void_ring','gtceu:small_tungsten_carbide_gear',400,GTValues.VA[GTValues.UHV]);
 
-    Infusion('saturation_core_high','32x kubejs:saturation_core_3','gtceu:dragon_breath 100','gtceu:energy_cluster','gtceu:tungsten_carbide_plate','gtceu:void_rod','gtceu:hsse_plate',
-    'gtceu:hsse_plate','gtceu:void_rod','gtceu:tungsten_carbide_plate',400,GTValues.VA[GTValues.UHV]);
+    event.recipes.gtceu.assembler(id('voidic_sponge'))
+        .itemInputs('16x minecraft:sponge','24x gtceu:fine_enderium_wire','6x kubejs:voidic_reinforced_mesh')
+        .inputFluids('gtceu:polyether_ether_ketone 432')
+        .itemOutputs('16x kubejs:void_saturation_sponge')
+        .duration(900)
+        .circuit(3)
+        .EUt(GTValues.VA[GTValues.UV])
+
 
     });

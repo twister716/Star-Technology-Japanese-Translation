@@ -103,9 +103,12 @@ const dust = (mat, amount) => {
 };
 const fluids = {
     water: 'minecraft:water 100',
+    water_5x: 'minecraft:water 500',
     distilled_water: 'gtceu:distilled_water 100',
+    distilled_water_5x: 'gtceu:distilled_water 500',
     sodium_persulfate: 'gtceu:sodium_persulfate 100',
     sodium_persulfate_5x: 'gtceu:sodium_persulfate 500',
+    sodium_persulfate_25x: 'gtceu:sodium_persulfate 2500',
 };
 
 /*
@@ -205,13 +208,13 @@ const plant_primitive_processing = (event, materialObj) => {
         .EUt(GTValues.VHA[GTValues.LV]);
 
     event.recipes.gtceu.bulk_ore_processing_array(id(`${materialObj.material}`))
-        .itemInputs(crushed_ore(materialObj.material, 1))
-        .inputFluids(fluids.water)
-        .itemOutputs(dust(materialObj.material, 1))
-        .itemOutputs(dust(materialObj.material, 1))
-        .chancedOutput(dust(materialObj.secondary, 1), 8000, 0)
-        .chancedOutput(dust(materialObj.tertiary, 1), 6500, 0)
-        .duration(240)
+        .itemInputs(crushed_ore(materialObj.material, 10))
+        .inputFluids(fluids.water_5x)
+        .itemOutputs(dust(materialObj.material, 10))
+        .itemOutputs(dust(materialObj.material, 10))
+        .itemOutputs(dust(materialObj.secondary, 8))
+        .itemOutputs(dust(materialObj.tertiary, 6))
+        .duration(2400)
         .EUt(GTValues.VHA[GTValues.LV]);
 
 };
@@ -229,7 +232,7 @@ const plant_electric_processing = (event, materialObj, tier) => {
         'ev': GTValues.VHA[GTValues.EV]
     }
     const fluid = (tier == 'lv' || tier == 'mv') ? fluids.distilled_water : fluids.sodium_persulfate;
-    const fluid_bulk = (tier == 'lv' || tier == 'mv') ? fluids.distilled_bulk : fluids.sodium_persulfate_bulk;
+    const fluid_5x = (tier == 'lv' || tier == 'mv') ? fluids.distilled_water_5x : fluids.sodium_persulfate_5x;
     event.recipes.gtceu.plant_ore_processing(id(`${materialObj.material}`))
         .itemInputs(crushed_ore(materialObj.material, 1))
         .inputFluids(fluid)
@@ -242,14 +245,14 @@ const plant_electric_processing = (event, materialObj, tier) => {
         .EUt(voltages[tier]);
 
     event.recipes.gtceu.bulk_ore_processing_array(id(`${materialObj.material}`))
-        .itemInputs(crushed_ore(materialObj.material, 1))
-        .inputFluids(fluid)
-        .itemOutputs(dust(materialObj.material, 1))
-        .chancedOutput(dust(materialObj.material, 1), 9000, 0)
-        .chancedOutput(dust(materialObj.secondary, 1), 7000, 0)
-        .chancedOutput(dust(materialObj.tertiary, 1), 4500, 0)
-        .chancedOutput(dust(materialObj.quaternary, 1), 3000, 0)
-        .duration(240)
+        .itemInputs(crushed_ore(materialObj.material, 10))
+        .inputFluids(fluid_5x)
+        .itemOutputs(dust(materialObj.material, 10))
+        .itemOutputs(dust(materialObj.material, 9))
+        .itemOutputs(dust(materialObj.secondary, 7))
+        .itemOutputs(dust(materialObj.tertiary, 4))
+        .itemOutputs(dust(materialObj.quaternary, 3))
+        .duration(2400)
         .EUt(voltages[tier]);
 };
 
@@ -270,15 +273,15 @@ const plant_ore_processing = (event, materialObj) => {
         .EUt(GTValues.VA[GTValues.IV]);
 
     event.recipes.gtceu.bulk_ore_processing_array(id(`${materialObj.material}`))
-        .itemInputs(crushed_ore(materialObj.material, 1))
-        .inputFluids(fluids.sodium_persulfate_5x)
-        .itemOutputs(dust(materialObj.material, 1))
-        .itemOutputs(dust(materialObj.material, 1))
-        .chancedOutput(dust(materialObj.secondary, 1), 7500, 0)
-        .chancedOutput(dust(materialObj.tertiary, 1), 5000, 0)
-        .chancedOutput(dust(materialObj.quaternary, 1), 3000, 0)
-        .chancedOutput(dust(materialObj.quinary, 1), 2000, 0)
-        .duration(320)
+        .itemInputs(crushed_ore(materialObj.material, 10))
+        .inputFluids(fluids.sodium_persulfate_25x)
+        .itemOutputs(dust(materialObj.material, 10))
+        .itemOutputs(dust(materialObj.material, 9))
+        .itemOutputs(dust(materialObj.secondary, 7))
+        .itemOutputs(dust(materialObj.tertiary, 5))
+        .itemOutputs(dust(materialObj.quaternary, 3))
+        .itemOutputs(dust(materialObj.quinary, 2))
+        .duration(3200)
         .EUt(GTValues.VA[GTValues.IV]);
 };
 
