@@ -207,6 +207,8 @@ ServerEvents.recipes(event => {
     };
 
     special_ultimate_casing('aurouric_polarization_cell',['kubejs:aurouric_resilient_casing', '6x kubejs:uiv_super_magnetic_core', '4x #gtceu:circuits/uiv', 'kubejs:uiv_micropower_router'], ['gtceu:polyether_ether_ketone 5844', 'gtceu:naquadated_soldering_alloy 4780', 'gtceu:draco_abyssal 288'], 'gtceu:electrolytic_cell');
+    special_ultimate_casing('absolute_annihilators',['kubejs:absolute_annihilation_casing', '4x gtceu:melastrium_mox_gear', '6x gtceu:small_hvga_steel_gear', '2x gtceu:uiv_electric_motor'], ['gtceu:tungsten_disulfide 5844', 'gtceu:naquadated_soldering_alloy 4780', 'gtceu:starium_alloy 432'], 'gtceu:crushing_wheels');
+    special_ultimate_casing('nuclei_seperators',['kubejs:inoculated_nuclei_seperation_casing', '6x gtceu:hvga_steel_plate', '4x gtceu:trikoductive_neutro_steel_gear', '1x gtceu:uiv_electric_motor'], ['gtceu:tungsten_disulfide 5844', 'gtceu:naquadated_soldering_alloy 4780', 'gtceu:mythrolic_alloy 432'], 'gtceu:slicing_blades');
 
     event.recipes.gtceu.assembler(id('titanic_blasting_casing'))
         .itemInputs('6x gtceu:titan_steel_plate', 'gtceu:naquadah_alloy_frame')

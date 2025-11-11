@@ -209,6 +209,26 @@ StartupEvents.registry('block', event => {
         .requiresTool(false)
         .textureAll('kubejs:block/casings/ultimate_multis/true_revitilization_casing');
 
+    event.create('absolute_annihilators')
+        .displayName('Absolute Annihilators')
+        .hardness(5)
+        .resistance(10)
+        .soundType('metal')
+        .tagBlock('mineable/pickaxe')
+        .tagBlock('minecraft:needs_iron_tool')
+        .requiresTool(false)
+        .textureAll('kubejs:block/casings/ultimate_multis/absolute_annihilators');
+
+    event.create('nuclei_seperators')
+        .displayName('Nuclei Seperators')
+        .hardness(5)
+        .resistance(10)
+        .soundType('metal')
+        .tagBlock('mineable/pickaxe')
+        .tagBlock('minecraft:needs_iron_tool')
+        .requiresTool(false)
+        .textureAll('kubejs:block/casings/ultimate_multis/nuclei_seperators');
+
     event.create('superdense_assembly_control_casing', 'gtceu:active')
         .displayName('Superdense Assembly Control Casing')
         .hardness(5)
