@@ -1187,9 +1187,9 @@
     "block.gtceu.multithreaded_component_synthesis_forge.tooltip.1": "§7The paragon of known component manufacturing capabilities able to absorb the technical capabilities of attached systems and maximize them to the greatest yield.",
     "block.gtceu.multithreaded_component_synthesis_forge.tooltip.2": "§8-----------------------------------",
     "block.gtceu.multithreaded_component_synthesis_forge.tooltip.3": "§dSynthesis Forge",
-    "block.gtceu.multithreaded_component_synthesis_forge.tooltip.4": "§7Components and Component parts are crafted in sets of 64 while their material cost is only 75% of what it would typically be and at 50% the time it would take.",
+    "block.gtceu.multithreaded_component_synthesis_forge.tooltip.4": "§7Components and Component parts are crafted in sets of 64 while their material cost is only 75% of what it would typically be.",
     "block.gtceu.multithreaded_component_synthesis_forge.tooltip.5": "§8-----------------------------------",
-    "block.gtceu.multithreaded_component_synthesis_forge.tooltip.6": "Has §bThoughput Boosting§r and §cSubtick Parallels",
+    "block.gtceu.multithreaded_component_synthesis_forge.tooltip.6": "Has §5Threading§r and §cSubtick Parallels",
     "gtceu.component_synthesis_forge": "§dComponent Synthesis",
     "gtceu.component_part_synthesis_forge": "§dComponent Part Synthesis",
 
@@ -1256,7 +1256,7 @@
     "block.gtceu.atomic_synthesis_plant": "Atomic Synthesis Plant",
     "block.gtceu.atomic_synthesis_plant.tooltip.0": "§6§lParagon of Chemisty",
     "block.gtceu.atomic_synthesis_plant.tooltip.1": "§7Not only is this machine capable of performing the task of a §6Chemical Plant§7 but it also pushes beyond what the know synthesis of chemisty beholds.",
-    "block.gtceu.atomic_synthesis_plant.tooltip.2": "Can use §3Parallel§r hatches, has §6Perfect Overclock§r, §bThoughput Boosting§r, and §cSubtick Parallels",
+    "block.gtceu.atomic_synthesis_plant.tooltip.2": "Can use §3Parallel§r hatches, has §6Perfect Overclock§r, §cSubtick Parallels§r, §2Bulking§r, and §bThoughput Boosting",
 
     "gtceu.absolute_reduction": "Absolute Chemical Line Reduction",
     "gtceu.enlightened_chemistry": "Enlightened Chemical Synthesis",

@@ -299,7 +299,7 @@ ServerEvents.recipes(event => {
             .itemInputs(inputs)
             .inputFluids(fluids)
             .itemOutputs(`${MCSF_Scaler}x gtceu:${Tier}_${type}`)
-            .duration(MCSF_Scaler * duration / 4)
+            .duration(MCSF_Scaler * duration)
             .stationResearch(
                 researchRecipeBuilder => researchRecipeBuilder
                     .researchStack(Item.of(`gtceu:${Tier}_${type}`))
@@ -350,7 +350,7 @@ ServerEvents.recipes(event => {
             .itemInputs(inputs)
             .inputFluids(fluids)
             .itemOutputs(`${MCSF_Scaler}x kubejs:${Tier}_${type}`)
-            .duration(MCSF_Scaler * duration / 2)
+            .duration(MCSF_Scaler * duration)
             .stationResearch(
                 researchRecipeBuilder => researchRecipeBuilder
                     .researchStack(Item.of(`kubejs:${Tier}_${type}`))
@@ -410,7 +410,7 @@ ServerEvents.recipes(event => {
                 .inputFluids(fluids)
                 .inputFluids(`gtceu:naquadria ${MCSF_Scaler*.75*576}`)
                 .itemOutputs(`${MCSF_Scaler}x gtceu:${Tier}_${type}`)
-                .duration(MCSF_Scaler * 600 / 2)
+                .duration(MCSF_Scaler * 600)
                 .stationResearch(
                     researchRecipeBuilder => researchRecipeBuilder
                         .researchStack(Item.of(`gtceu:${Tier}_${type}`))
@@ -424,7 +424,7 @@ ServerEvents.recipes(event => {
                 .itemInputs(inputs)
                 .inputFluids(fluids)
                 .itemOutputs(`${MCSF_Scaler}x gtceu:${Tier}_${type}`)
-                .duration(MCSF_Scaler * 600 / 2)
+                .duration(MCSF_Scaler * 600)
                 .stationResearch(
                     researchRecipeBuilder => researchRecipeBuilder
                         .researchStack(Item.of(`gtceu:${Tier}_${type}`))

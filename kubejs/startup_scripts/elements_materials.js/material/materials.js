@@ -1489,7 +1489,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(18550, 'highest', VA('uev'), 600)
         .iconSet(SHINY)
         .fluidPipeProperties(120000, 6000, true,true,true,true)
-        .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, rotor, ring, foil, no_decomp, no_abs_recipe);
+        .flags(plates, dense_plate, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, rotor, ring, foil, no_decomp, no_abs_recipe);
 
     event.create('nyanium')
         .components('7x aurourium', '4x uranium_rhodium_dinaquadide', '1x magnesium_nitride', '2x pure_netherite')
