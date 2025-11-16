@@ -87,22 +87,6 @@ ServerEvents.recipes(event => {
                 )
             .EUt(GTValues.VHA[GTValues.UIV]);
 
-        event.recipes.gtceu.assembly_line(id('multithreaded_component_synthesis_forge'))
-            .itemInputs('kubejs:core_casing', '36x #gtceu:circuits/uxv', '48x gtceu:component_nexus', '48x gtceu:component_part_hub',
-                '40x gtceu:uiv_assembler', '40x gtceu:uiv_scanner', '48x gtceu:uiv_fluid_regulator', '24x kubejs:draconic_coordinate_core',
-                '24x gtceu:uiv_field_generator', '48x kubejs:runic_wave_generator', '56x kubejs:uiv_micropower_router', '48x gtceu:nyanium_screw',
-                '64x kubejs:uipic_chip','64x kubejs:uipic_chip','64x kubejs:uipic_chip','64x kubejs:uipic_chip')
-            .inputFluids('gtceu:nyanium 2400000','gtceu:pure_dragon_breath 540000','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 540000','gtceu:naquadated_soldering_alloy 432432')
-            .itemOutputs('gtceu:multithreaded_component_synthesis_forge')
-            .duration(248647)
-            .stationResearch(
-                researchRecipeBuilder => researchRecipeBuilder
-                    .researchStack(Item.of('gtceu:component_nexus'))
-                    .EUt(GTValues.VHA[GTValues.UIV])
-                    .CWUt(256)
-                )
-            .EUt(GTValues.VA[GTValues.UXV]);
-
     // === Draco-QMDs ===
     const DracoQMD = (nameType,type,quantity,inputs,polymerAmount,cwu) => {
 
