@@ -481,6 +481,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["1207F7CCCB8335A5"]
 			icon: "gtceu:bromine_bucket"
 			id: "60241DC3DA088331"
 			tasks: [
