@@ -2490,7 +2490,7 @@
 			tasks: [
 				{
 					id: "3B6CFA81B1411C5C"
-					item: "gtceu:hydroxide_bucket"
+					item: "gtceu:hydrogen_bucket"
 					optional_task: true
 					type: "item"
 				}
