@@ -686,7 +686,6 @@
 		{
 			dependencies: [
 				"23753730BC6D5CB3"
-				"181B1275C964F1ED"
 				"7A23DEA23577657A"
 			]
 			id: "1EDA7840DBAC4B6E"
@@ -737,7 +736,10 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
+			dependencies: [
+				"1820787D031EAB15"
+				"1EDA7840DBAC4B6E"
+			]
 			icon: "gtceu:iron_ii_chloride_bucket"
 			id: "181B1275C964F1ED"
 			tasks: [

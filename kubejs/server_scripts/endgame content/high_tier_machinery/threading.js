@@ -115,7 +115,7 @@ ServerEvents.recipes(event => {
             'gtceu:perfluoroelastomer_rubber 285964','gtceu:naquadated_soldering_alloy 221184'],25484,240,GTValues.VHA[GTValues.UXV]);
         
         assemblyThreadMachine('subatomic_particle_lattice_isolation_terminal','gtceu:ultispestalloy_cmsh_frame','uxv', 12,['6x gtceu:uiv_extruder', '6x gtceu:uiv_lathe',
-            '6x gtceu:uiv_cutter','6x gtceu:uiv_wiremill'],['24x gtceu:uiv_electric_piston', '16x gtceu:uiv_robot_arm', '24x kubejs:uiv_high_strength_panel', '4x gtceu:uiv_conveyor_module',
+            '6x gtceu:uiv_cutter','6x gtceu:uiv_wiremill'],['24x gtceu:uiv_electric_piston', '16x gtceu:uiv_robot_arm', '24x kubejs:uiv_high_strength_panel',
             '24x kubejs:uiv_micropower_router', '32x gtceu:ultispestalloy_cmsh_screw'],'gtceu:uiv_cutter',['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 345168',
             'gtceu:tungsten_disulfide 285964','gtceu:naquadated_soldering_alloy 221184'],25651,240,GTValues.VHA[GTValues.UXV]);
         

@@ -109,19 +109,19 @@
 		{
 			id: "2944146ABA34CB5B"
 			linked_quest: "5C15427D1679D4C3"
-			x: -9.0d
+			x: -9.5d
 			y: 0.5d
 		}
 		{
 			id: "6D220F5D5B6F0922"
 			linked_quest: "6EB85BBD539AEB57"
-			x: -9.0d
+			x: -9.5d
 			y: 2.0d
 		}
 		{
 			id: "607658C8752D8C32"
 			linked_quest: "0F7A1EA1AB52F795"
-			x: -9.0d
+			x: -9.5d
 			y: 5.0d
 		}
 		{
@@ -205,13 +205,13 @@
 		{
 			id: "1AF9823AB30C2670"
 			linked_quest: "5C302CB1A1068EE1"
-			x: -9.0d
+			x: -9.5d
 			y: 3.5d
 		}
 		{
 			id: "4859BD22DD506CA2"
 			linked_quest: "06EC98F6E6AFC2AF"
-			x: -9.0d
+			x: -9.5d
 			y: 6.5d
 		}
 		{
@@ -469,7 +469,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.line_of_progression.quest51.title}"
-			x: -7.5d
+			x: -8.0d
 			y: 0.5d
 		}
 		{
@@ -503,7 +503,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.line_of_progression.quest52.title}"
-			x: -7.5d
+			x: -8.0d
 			y: 2.0d
 		}
 		{
@@ -522,7 +522,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.line_of_progression.quest53.title}"
-			x: -7.5d
+			x: -8.0d
 			y: 5.0d
 		}
 		{
@@ -541,7 +541,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.line_of_progression.quest54.title}"
-			x: -7.5d
+			x: -8.0d
 			y: 3.5d
 		}
 		{
@@ -588,7 +588,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.line_of_progression.quest55.title}"
-			x: -6.0d
+			x: -6.5d
 			y: 3.5d
 		}
 		{
@@ -844,7 +844,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.line_of_progression.quest95.title}"
-			x: -7.5d
+			x: -8.0d
 			y: 6.5d
 		}
 		{
@@ -958,7 +958,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["123F0103224A8C43"]
+			dependencies: ["21B885A85E5764F9"]
 			description: ["[\"\",{\"underlined\":1,\"translate\":\"Go Read About Parallels\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"70EE9D4811A27CF2\"}}]"]
 			id: "3377AD18FED17C17"
 			subtitle: "Buffed Up Machines"
@@ -1435,7 +1435,7 @@
 			description: ["[\"\",{\"underlined\":1,\"translate\":\"Read About Threading Here\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"143CFCE710B59455\"}}]"]
 			id: "15A8836C76F01893"
 			tasks: [{
-				id: "4693B916A3D0D6D2"
+				id: "54C1B737D6BEACB9"
 				item: {
 					Count: 1
 					id: "itemfilters:or"
@@ -1450,27 +1450,11 @@
 							}
 							{
 								Count: 1b
-								id: "gtceu:gravitational_compression_chamber"
-							}
-							{
-								Count: 1b
-								id: "gtceu:yielding_excression_advanced_seperation_transformator"
-							}
-							{
-								Count: 1b
-								id: "gtceu:fermenting_arboreal_rejuvination_monstronsity"
-							}
-							{
-								Count: 1b
-								id: "gtceu:material_annihilation_array"
-							}
-							{
-								Count: 1b
 								id: "gtceu:ascendant_engraving_matrix"
 							}
 							{
 								Count: 1b
-								id: "gtceu:superior_particulate_isolation_nexus"
+								id: "gtceu:byteforce_unified_incomparable_logistics_depot"
 							}
 							{
 								Count: 1b
@@ -1478,7 +1462,15 @@
 							}
 							{
 								Count: 1b
-								id: "gtceu:byteforce_unified_incomparable_logistics_depot"
+								id: "gtceu:fermenting_arboreal_rejuvination_monstronsity"
+							}
+							{
+								Count: 1b
+								id: "gtceu:gravitational_compression_chamber"
+							}
+							{
+								Count: 1b
+								id: "gtceu:material_annihilation_array"
 							}
 							{
 								Count: 1b
@@ -1487,6 +1479,18 @@
 							{
 								Count: 1b
 								id: "gtceu:subatomic_particle_lattice_isolation_terminal"
+							}
+							{
+								Count: 1b
+								id: "gtceu:superior_particulate_isolation_nexus"
+							}
+							{
+								Count: 1b
+								id: "gtceu:yielding_excression_advanced_seperation_transformator"
+							}
+							{
+								Count: 1b
+								id: "gtceu:multithreaded_component_synthesis_forge"
 							}
 						]
 					}

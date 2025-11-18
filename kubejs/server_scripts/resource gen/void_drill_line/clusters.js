@@ -56,10 +56,10 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.aqueous_void_excavation(id('mining'))
-        .inputFluids('gtceu:drilling_fluid 20000')
+        .inputFluids('gtceu:drilling_fluid 25000')
         .outputFluids('gtceu:rare_ore_residue 4000', 'gtceu:raw_ore_slurry 6000')
         .duration(960)
-        .EUt(GTValues.VA[GTValues.HV]);
+        .EUt(GTValues.VA[GTValues.EV]);
 
     });
 
