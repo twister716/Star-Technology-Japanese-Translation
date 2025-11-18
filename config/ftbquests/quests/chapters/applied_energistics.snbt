@@ -677,6 +677,26 @@
 								Count: 1b
 								id: "gtceu:luv_me_assembler"
 							}
+							{
+								Count: 1b
+								id: "gtceu:zpm_me_assembler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_me_assembler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uhv_me_assembler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uev_me_assembler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uiv_me_assembler"
+							}
 						]
 					}
 				}
