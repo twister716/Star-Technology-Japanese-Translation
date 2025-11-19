@@ -163,7 +163,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.large_chemical_reactor(id('carbon_acid'))
         .itemInputs('3x gtceu:potassium_carbonate_dust')
         .inputFluids('gtceu:hydrogen 1000')
-        .itemOutputs('gtceu:potassium_dust')
+        .itemOutputs('3x gtceu:potassium_dust')
         .outputFluids('gtceu:carbon_acid 500')
         .duration(100)
         .EUt(GTValues.VHA[GTValues.IV]);
