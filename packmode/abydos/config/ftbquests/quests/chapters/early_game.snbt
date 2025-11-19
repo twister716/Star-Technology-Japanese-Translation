@@ -2536,9 +2536,11 @@
 			shape: "none"
 			size: 2.0d
 			tasks: [{
-				id: "0440A02F0353E30C"
-				title: "{ftbquests.chapter.early_game.quest77.task_306420898440930060.title}"
-				type: "checkmark"
+				dimension: "minecraft:overworld"
+				icon: "minecraft:sand"
+				id: "0DF1C13A6E033D21"
+				title: "To the Sands"
+				type: "dimension"
 			}]
 			x: -7.0d
 			y: -6.0d
