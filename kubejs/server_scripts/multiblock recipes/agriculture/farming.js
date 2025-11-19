@@ -239,7 +239,7 @@ ServerEvents.recipes(event => {
             .notConsumable(`8x ${seed}`)
             .inputFluids(getHydroponicFluid(crop))
             .itemOutputs(`64x ${cropName}`)
-            .chancedOutput(`32x ${seed}`, 5000, 0)
+            .itemOutputs(`16x ${seed}`)
             .duration(600)
             .EUt(euAmount)
             .circuit(0);
@@ -248,7 +248,7 @@ ServerEvents.recipes(event => {
             .notConsumable(`8x ${seed}`)
             .inputFluids(getHydroponicFluid(crop), 'gtceu:nutrient_rich_fertilizer_solution 100')
             .itemOutputs(`128x ${cropName}`)
-            .chancedOutput(`64x ${seed}`, 5000, 0)
+            .itemOutputs(`32x ${seed}`)
             .duration(300)
             .EUt(euAmount)
             .circuit(1);
@@ -257,7 +257,7 @@ ServerEvents.recipes(event => {
             .notConsumable(`8x ${seed}`)
             .inputFluids(getHydroponicFluid(crop), 'gtceu:biostimulating_mixture 100')
             .itemOutputs(`256x ${cropName}`)
-            .chancedOutput(`128x ${seed}`, 5000, 0)
+            .itemOutputs(`64x ${seed}`)
             .duration(150)
             .EUt(euAmount)
             .circuit(2);
