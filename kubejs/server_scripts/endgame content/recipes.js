@@ -200,7 +200,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:nyanium_frame', '4x gtceu:double_isovol_plate', '2x gtceu:double_nyanium_plate', '6x kubejs:draconic_scale_cells')
         .inputFluids('gtceu:dragon_breath 1750')
         .itemOutputs('2x kubejs:draneko_casing')
-        .circuit(6)
+        .circuit(8)
         .duration(50)
         .EUt(16);
 
