@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
                     '32x gtceu:fine_ancient_runicalium_wire', '32x gtceu:fine_stellarium_wire', '32x gtceu:fine_melodium_wire', '32x gtceu:fine_prismalium_wire', 
                     '32x gtceu:fine_dragonsteel_wire', '32x gtceu:fine_twinite_wire', '32x gtceu:fine_shellite_wire', '32x gtceu:fine_enderium_wire', 
                     '32x gtceu:fine_lumium_wire', '32x gtceu:fine_signalum_wire', '32x gtceu:fine_soul_infused_wire')
-                .inputFluids('gtceu:utopian_akreyrium 5000','gtceu:naquadated_soldering_alloy 2880')
+                .inputFluids('gtceu:utopian_akreyrium 5000','gtceu:borealic_concentrate 3456','gtceu:naquadated_soldering_alloy 2880')
                 .itemOutputs('kubejs:prismalic_helix_core')
                 .duration(900)
                 .stationResearch(

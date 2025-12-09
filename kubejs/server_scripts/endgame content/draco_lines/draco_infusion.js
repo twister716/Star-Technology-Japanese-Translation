@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
     };
 
     Infusion('dragonic_eye','kubejs:dragonic_eye','gtceu:dragon_breath 12500','gtceu:quantum_eye','gtceu:zpm_sensor',
-    'gtceu:dense_draconyallium_plate','2x kubejs:draconic_scale_cells','2x kubejs:draconic_stem_cells', '4x gtceu:draconyallium_foil', 
+    'gtceu:double_abyssal_alloy_plate','2x kubejs:draconic_scale_cells','2x kubejs:draconic_stem_cells', '4x gtceu:draconyallium_foil', 
     '2x kubejs:helish_star',400,GTValues.VHA[GTValues.UIV]);
 
     Infusion('draco_stem_cells','4x kubejs:draconic_stem_cells','gtceu:dragon_breath 125','32x gtceu:stem_cells', 'gtceu:echo_shard_plate', 

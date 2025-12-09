@@ -248,9 +248,9 @@ ServerEvents.recipes(event => {
     special_ultimate_casing('draco_assembly_grating',['gtceu:void_frame', '5x gtceu:aerorelient_steel_rotor', '2x gtceu:uev_electric_motor', '12x gtceu:void_foil'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 1008', 'gtceu:dragon_breath 1750'], 'gtceu:assembly_line_grating');
     special_ultimate_casing('draco_ware_casing',['gtceu:trikoductive_neutro_steel_frame', '6x kubejs:draconic_brain_matter_cells', '2x #gtceu:circuits/uev', 'gtceu:uev_sensor', '32x gtceu:fine_aurourium_wire', '32x gtceu:fine_magmada_alloy_wire'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 1008', 'gtceu:dragon_breath 2250'], 'gtceu:high_power_casing');
     special_ultimate_casing('draco_resilient_fusion_glass',['gtceu:fusion_glass', '12x kubejs:draconic_scale_cells', '1x gtceu:uhv_field_generator', '32x gtceu:neutron_reflector'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 1008', 'gtceu:dragon_breath 1250'], 'gtceu:fusion_glass');
-    special_ultimate_casing('abyssal_inductor_hull',['gtceu:abyssal_alloy_frame', '2x kubejs:abyssal_inductor', 'kubejs:uiv_microfluidic_flow_valve', '2x kubejs:voidic_reinforced_mesh', '#gtceu:circuits/uiv', '8x gtceu:polonium_bismide_single_cable'], ['gtceu:naquadated_soldering_alloy 864'], 'kubejs:abyssal_inductor');
+    special_ultimate_casing('abyssal_inductor_hull',['gtceu:abyssal_alloy_frame', '2x kubejs:abyssal_inductor', 'kubejs:uiv_microfluidic_flow_valve', '2x kubejs:voidic_reinforced_mesh', '#gtceu:circuits/uiv', '8x gtceu:polonium_bismide_single_cable'], ['gtceu:naquadated_soldering_alloy 864', 'gtceu:dragon_breath 400'], 'kubejs:abyssal_inductor');
     
-    special_ultimate_casing('abyssal_inductor',['gtceu:uiv_emitter', '3x gtceu:lepton_resonant_thallium_antimonide_spring', '6x gtceu:draco_abyssal_screw', '6x gtceu:polonium_bismide_single_cable'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 720', 'gtceu:dragon_breath 175'], 'gtceu:blacklight');
+    special_ultimate_casing('abyssal_inductor',['gtceu:uiv_emitter', '3x gtceu:lepton_resonant_thallium_antimonide_spring', '6x gtceu:draco_abyssal_screw', '6x gtceu:polonium_bismide_single_cable'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 720', 'gtceu:borealic_concentrate 576'], 'gtceu:blacklight');
 
     event.recipes.gtceu.assembler(id('titanic_blasting_casing'))
         .itemInputs('6x gtceu:titan_steel_plate', 'gtceu:naquadah_alloy_frame')
@@ -466,7 +466,7 @@ ServerEvents.recipes(event => {
                 .EUt(GTValues.VHA[GTValues.UIV])
                 .CWUt(224)
             )
-        .EUt(GTValues.VA[GTValues.UIV]);
+        .EUt(GTValues.VA[GTValues.UXV]);
 
     // Lepton TlSb
     event.recipes.gtceu.mixer(id('thallium_antimonide'))
@@ -529,5 +529,42 @@ ServerEvents.recipes(event => {
         P: 'gtceu:neutronium_plate',
         H: 'gtceu:polyether_ether_ketone_large_fluid_pipe'
     }).id(id('uhv_hermetic_casing'));
+
+    // Better Blast Furnaces
+    event.recipes.gtceu.assembly_line(id('mega_abs'))
+        .itemInputs('gtceu:uhv_alloy_smelter', '12x #gtceu:circuits/uev', '8x gtceu:uhv_field_generator', '6x gtceu:dense_ancient_netherite_plate',
+            '4x gtceu:uhv_robot_arm', '12x gtceu:uhv_fluid_regulator', '12x gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire', '4x gtceu:calamatium_rotor',
+            '4x gtceu:cerium_tritelluride_spring', '8x gtceu:calamatium_screw')
+        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 13824',
+            'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 10368',
+            'gtceu:utopian_akreyrium 12000',
+            'gtceu:perfluoroelastomer_rubber 8640')
+        .itemOutputs('gtceu:mega_abs')
+        .duration(1800)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:super_abs'))
+                .EUt(GTValues.VHA[GTValues.UHV])
+                .CWUt(160)
+            )
+        .EUt(GTValues.VHA[GTValues.UEV]);
+
+     event.recipes.gtceu.assembly_line(id('ultimate_ebf'))
+        .itemInputs('gtceu:abyssal_alloy_frame', '8x #gtceu:circuits/uiv', '4x gtceu:dense_draco_abyssal_plate', '6x gtceu:uiv_field_generator',
+            '4x gtceu:uiv_conveyor_module', '8x gtceu:borealic_steel_gear', '4x gtceu:uiv_electric_motor', '18x gtceu:small_ultispestalloy_cmsh_gear',
+            '4x gtceu:lepton_resonant_thallium_antimonide_spring', '4x kubejs:uiv_microfluidic_flow_valve', '32x gtceu:fine_rhenium_super_composite_alloy_wire', '16x gtceu:zeroidic_trinate_steel_screw')
+        .inputFluids('gtceu:naquadated_soldering_alloy 24768',
+            'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 19008',
+            'start_core:corefire_nectar 100000',
+            'gtceu:dragon_breath 12500')
+        .itemOutputs('gtceu:ultimate_ebf')
+        .duration(1800)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:mega_blast_furnace'))
+                .EUt(GTValues.VHA[GTValues.UIV])
+                .CWUt(192)
+            )
+        .EUt(GTValues.VHA[GTValues.UXV]);
 
 });

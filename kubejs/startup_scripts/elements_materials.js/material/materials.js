@@ -1433,7 +1433,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     compLiquidTemp('superheated_infernal_concentrate', 50000, '1x mystery', 0xff6b00, [no_decomp]); 
 
-    compLiquidTemp('sub_stellar_infernal_concentrate', 75000, '1x mystery', 0xfefbc6, [no_decomp]); 
+    compLiquidTemp('sub_stellar_infernal_concentrate', 75000, '1x mystery', 0xfefbc6, [no_decomp]);
 
     compLiquidTemp('super_stellar_infernal_concentrate', 100000, '1x mystery', 0xf4faff, [no_decomp]); 
 
@@ -1523,6 +1523,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     conductor('astatium_bioselex_carbonite', ['1x astatine', '2x bismuth', '3x selenium', '2x thallium', '4x sulfur', '1x carbon'], 0x305f84, DULL, [13475, 'highest', VA('uv'), 3500], [V('uev'), 3, 16, false] ,[spring, no_decomp]);
 
     conductor('astatine_bis_tritelluride_cobo_selenium_over_iron_titanium_oxide', ['1x astatine_bis_tritelluride_cobo_selenium', 'iron_titanium_oxide'], 0xe61485, DULL, [14799, 'highest', VA('uhv'), 2500], [V('uev'), 2, 12, false], [fine_wire, bolt_and_screw, no_decomp]);
+
+    compLiquidStill('borealic_concentrate', ['1x aurourium', '17x stellarium'], [no_decomp]);
 
     //UIV Materials
     compDustLiquid('tungsten_disulfide', ['1x tungsten', '2x sulfur'], 0x928897, [no_decomp]);

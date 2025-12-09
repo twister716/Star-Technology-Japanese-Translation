@@ -37,11 +37,12 @@ ServerEvents.recipes(event => {
     Fusion('argon_plasma',1000,'carbon',144,'magnesium',144,24576,7.2,180);
     Fusion('americium_plas_plasma',144,'plutonium_241',144,'hydrogen',1000,98304,15.6,760);
     Fusion('tin_plas_plasma',144,'silver',144,'helium_3',1500,24576,7.2,280);
-    Fusion('aurourium',144,'nether_star_concentrate',288,'seaborgium',216,884736,19.2,888);
+    Fusion('aurourium',144,'nether_star_concentrate',396,'seaborgium',108,884736,19.2,888);
     Fusion('paradox_plasma',144,'chaos_centric_void',250,'order_centric_void',250,294912,16.2,900);
     Fusion('magmatic_plasma',144,'infernal_concentrate',500,'iron_plasma',288,66666,12.8,720);
     Fusion('voidic_plasma',144,'echo_r',576,'void',144,344064,19.2,1040);
     Fusion('preon_plasma',216,'utopian_akreyrium',1000,'dragon_breath',50,688128,12.8,1160);
     Fusion('maxwellium',44,'nyanium',444,'abyssal_alloy',44,1250801,9.6,1350);
+    Fusion('borealic_concentrate',144,'stellarium',135,'aurourium',9,255987,3.6,1200);
 
 });

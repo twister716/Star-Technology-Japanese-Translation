@@ -808,6 +808,7 @@
     "material.gtceu.sub_stellar_infernal_concentrate": "Sub-Stellar Infernal Concentrate",
     "material.gtceu.super_stellar_infernal_concentrate": "Super-Stellar Infernal Concentrate",
     "material.gtceu.hyper_stellar_infernal_concentrate": "Hyper-Stellar Infernal Concentrate",
+    "material.gtceu.borealic_concentrate": "Borealic Concentrate",
 
     "material.gtceu.low_saturation_voidic_excression": "Low Saturation Voidic Excression",
     "material.gtceu.moderate_saturation_voidic_excression": "Moderate Saturation Voidic Excression",
@@ -929,6 +930,17 @@
     "block.gtceu.mega_abs.tooltip.6": "§7For every voltage tier above §bMV§7, temperature is increased by §f100K§7.",
     "block.gtceu.mega_abs.tooltip.7": "§8-----------------------------------",
     "block.gtceu.mega_abs.tooltip.8": "Can use §3Parallel§r hatches and has §cSubtick Parallels",
+
+    "block.gtceu.ultimate_ebf": "Catalytic Hellfire Energized Furnace",
+    "block.gtceu.ultimate_ebf.tooltip.0": "§c§lBoosted Rotary Hearth Furnace",
+    "block.gtceu.ultimate_ebf.tooltip.1": "§7A blazing forge energized with extreme heating fluids and concentrations layering complex integrations of thermodynamic in syncrosis.",
+    "block.gtceu.ultimate_ebf.tooltip.2": "§8-----------------------------------",
+    "block.gtceu.ultimate_ebf.tooltip.3": "§6Coil Overclocking:",
+    "block.gtceu.ultimate_ebf.tooltip.4": "§7For every §f900K§7 above the recipe temperature, a multiplicative §f95%%§7 energy multiplier is applied pre-overclocking.",
+    "block.gtceu.ultimate_ebf.tooltip.5": "§7For every §f1800K§7 above the recipe temperature, one overclock becomes §f100%% efficient§7 (perfect overclock).",
+    "block.gtceu.ultimate_ebf.tooltip.6": "§7For every voltage tier above §bMV§7, temperature is increased by §f100K§7.",
+    "block.gtceu.ultimate_ebf.tooltip.7": "§8-----------------------------------",
+    "block.gtceu.ultimate_ebf.tooltip.8": "Can use §3Parallel§r hatches, has §bThroughput Boosting§r, and §cSubtick Parallels",
 
     "block.gtceu.supreme_plasma_turbine": "Supreme Plasma Turbine",
     "block.gtceu.supreme_plasma_turbine.tooltip.0": "§3§lBoosted Large Plasma Turbine",
@@ -1223,8 +1235,7 @@
     "block.gtceu.component_part_hub.tooltip.0": "§6§lBoosted Component Part Assembler",
     "block.gtceu.component_part_hub.tooltip.1": "§7Once stabilized this amalgamation of a machine is able to assemble component parts without the need for ordered inputs.",
     "block.gtceu.component_part_hub.tooltip.2": "§8-----------------------------------",
-    "block.gtceu.super_abs.component_part_hub.3": "Can only have §bone§r Energy Hatch",
-    "block.gtceu.component_part_hub.tooltip.4": "Has §cSubtick Parallels §fand §bThroughput Boosting",
+    "block.gtceu.component_part_hub.tooltip.3": "Has §cSubtick Parallels §fand §bThroughput Boosting",
     "gtceu.stocking_component_part_assembly": "Component Part Hub",
 
     "block.gtceu.super_abs": "Chambered Alloy Transmuter",
@@ -1241,7 +1252,7 @@
 
     "block.gtceu.super_ebf": "Hardened Industrial Furnace",
     "block.gtceu.super_ebf.tooltip.0": "§6§lBoosted Electric Blast Furnace",
-    "block.gtceu.super_ebf.tooltip.1": "§7Funneling and heating has elevated this machine to another level of manufacturing capabilities.",
+    "block.gtceu.super_ebf.tooltip.1": "§7Concentrated heating has elevated this machine to another level of manufacturing capabilities.",
     "block.gtceu.super_ebf.tooltip.2": "§8-----------------------------------",
     "block.gtceu.super_ebf.tooltip.3": "§6Coil Overclocking:",
     "block.gtceu.super_ebf.tooltip.4": "§7For every §f900K§7 above the recipe temperature, a multiplicative §f95%%§7 energy multiplier is applied pre-overclocking.",

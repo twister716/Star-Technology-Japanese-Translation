@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         .duration(2800)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:mega_blast_furnace'))
+                .researchStack(Item.of('kubejs:heart_of_the_flame'))
                 .EUt(GTValues.VA[GTValues.UHV])
                 .CWUt(192)
             )
@@ -55,8 +55,8 @@ ServerEvents.recipes(event => {
             .inputFluids(inputs)
             .itemInputs(`${IngQuant}x kubejs:${catalyst}_catalyst`)
             .blastFurnaceTemp(HeatMK)
-            .duration(SecDurPerIng * 20 * IngQuant * .67)
-            .outputFluids(`gtceu:${type}_plasma ${IngQuant * 144}`)
+            .duration(SecDurPerIng * 20 * IngQuant * .9)
+            .outputFluids(`gtceu:${type}_plasma ${IngQuant * 144 * 1.125}`)
             .itemOutputs(`${IngQuant}x gtceu:tiny_hellfire_ash_dust`)
             .EUt(eut)
             .circuit(inputs.length + 10);
@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
     HellForgeMat('draco_abyssal', 9, ['gtceu:draconyallium 144', 'gtceu:abyssal_alloy 432', 'gtceu:void 288', 'gtceu:ancient_runicalium 432'], 'preon', 'abyssal', 1758, GTValues.VA[GTValues.UXV], 39.4);
     HellForgeMat('expetidalloy_d_17', 17, ['gtceu:hafnide_ceramic_base 288', 'gtceu:hastelloy_c_276 1584', 'gtceu:dragonsteel 432', 'gtceu:rhodium_plated_palladium 144'], 'americium_plas', 'ascendant', 863, GTValues.VA[GTValues.UIV], 32.7);
     HellForgeMat('rhenate_w', 33, ['gtceu:rhenium 288', 'gtceu:tungsten 720', 'gtceu:neutronium 144', 'gtceu:rose_gold 2592', 'gtceu:neodymium 1008'], 'tin_plas', 'ascendant', 946, GTValues.VA[GTValues.UIV], 34.3);
-    HellForgeMat('borealic_steel', 20, ['gtceu:prismalium 288', 'gtceu:rose_gold 576', 'gtceu:aurourium 1584', 'gtceu:titan_steel 288', 'gtceu:ancient_netherite 144'], 'argon', 'ascendant', 974, GTValues.VA[GTValues.UIV], 31.5)
+    HellForgeMat('borealic_steel', 20, ['gtceu:prismalium 288', 'gtceu:rose_gold 576', 'gtceu:aurourium 1152', 'gtceu:titan_steel 288', 'gtceu:ancient_netherite 144', 'gtceu:borealic_concentrate 432'], 'argon', 'ascendant', 974, GTValues.VA[GTValues.UIV], 31.5)
     HellForgeMat('ultispestalloy_cmsh', 27, ['gtceu:magmada_alloy 288', 'gtceu:shellite 432', 'gtceu:ultimet 2160', 'gtceu:hastelloy_c_276 864', 'gtceu:hafnium 144'], 'iron', 'ascendant', 916, GTValues.VA[GTValues.UIV], 29.4);
     HellForgeMat('trikoductive_neutro_steel', 17, ['gtceu:isovol 864', 'gtceu:titan_steel 720', 'gtceu:estalt 144', 'gtceu:ruthenium_trinium_americium_neutronate 432', 'gtceu:twinite 288'], 'helium', 'ascendant', 981, GTValues.VA[GTValues.UIV], 35.1);
     HellForgeMat('melastrium_mox', 13, ['gtceu:osmiridium 288', 'gtceu:astrenalloy_nx 1008', 'gtceu:melodium 432', 'gtceu:potin 144'], 'nickel', 'ascendant', 955, GTValues.VA[GTValues.UIV], 31.4);
@@ -116,12 +116,11 @@ ServerEvents.recipes(event => {
         .duration(640)
         .EUt(GTValues.VA[GTValues.UEV]);
 
-    event.recipes.gtceu.fusion_reactor(id('sub_stellar_infernal_concentrate'))
-        .inputFluids('gtceu:superheated_infernal_concentrate 1500', 'gtceu:stellarium 18')
-        .outputFluids('gtceu:sub_stellar_infernal_concentrate 1000')
-        .duration(640)
-        .EUt(255987)
-        .fusionStartEU(1200000000);  
+    event.recipes.gtceu.injection_mixer(id('sub_stellar_infernal_concentrate'))
+        .inputFluids('gtceu:superheated_infernal_concentrate 3000', 'gtceu:borealic_concentrate 8')
+        .outputFluids('gtceu:sub_stellar_infernal_concentrate 2000')
+        .duration(960)
+        .EUt(GTValues.VHA[GTValues.UEV]);  
         
     // Super Stellar Recipe
 
@@ -171,12 +170,12 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler(id(`${type}_catalyst`))
         .itemInputs(inputs)
         .inputFluids(`gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate ${512 + scaler * 64}`)
-        .itemOutputs(`192x kubejs:${type}_catalyst`)
+        .itemOutputs(`96x kubejs:${type}_catalyst`)
         .duration(600)
         .EUt(GTValues.VHA[GTValues.UV] * ( 4 ** scaler ));
     };
-    catalyst('ascendant',['gtceu:nyanium_frame','kubejs:uhv_catalyst_core','2x gtceu:long_stellarium_rod','2x #gtceu:circuits/uhv','48x gtceu:sapphire_lens'],1);
-    catalyst('infernal',['gtceu:magmada_alloy_frame','kubejs:uev_catalyst_core','2x gtceu:long_ancient_netherite_rod','2x #gtceu:circuits/uev','48x gtceu:ruby_lens'],2);
-    catalyst('abyssal',['gtceu:draconyallium_frame','kubejs:uiv_catalyst_core','2x gtceu:long_void_rod','2x #gtceu:circuits/uiv','48x gtceu:echo_shard_lens'],3);
+    catalyst('ascendant',['gtceu:nyanium_frame','2x gtceu:gravi_star','2x gtceu:long_stellarium_rod','1x #gtceu:circuits/uhv','32x gtceu:sapphire_lens'],1);
+    catalyst('infernal',['gtceu:magmada_alloy_frame','2x kubejs:helish_star','2x gtceu:long_ancient_netherite_rod','1x #gtceu:circuits/uev','32x gtceu:ruby_lens'],2);
+    catalyst('abyssal',['gtceu:draconyallium_frame','kubejs:dragonic_eye','2x gtceu:long_void_rod','1x #gtceu:circuits/uiv','32x gtceu:echo_shard_lens'],3);
 
     });
